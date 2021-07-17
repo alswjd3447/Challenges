@@ -1,0 +1,266 @@
+@import "reset.css";
+
+:root {
+  --font-color: rgb(34, 34, 34);
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--font-color);
+}
+
+body {
+  width: 730px;
+  height: 680px;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.page {
+  background-color: white;
+  width: 275px;
+  height: 580px;
+  border-radius: 30px;
+}
+
+.top-bar {
+  margin: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-song__img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(30, 15, 65, 0.2);
+  margin-bottom: 30px;
+}
+
+.main-song {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-song__title {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.main-song__genre {
+  font-size: 12px;
+  color: #999999;
+}
+
+.main-song-btn {
+  display: flex;
+  margin: 25px 0px;
+  justify-content: space-between;
+}
+
+.main-song-btn__like,
+.main-song-btn__shuffle {
+  width: 80px;
+  height: 30px;
+  background-color: var(--font-color);
+  font-size: 10px;
+  font-weight: 500;
+  color: #999999;
+  /* color: white; */
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-song-btn__like {
+  background-color: white;
+  box-shadow: 0px 10px 10px #f5f5f5;
+  margin-left: 5px;
+}
+
+.main-song-btn__like i {
+  margin-right: 5px;
+}
+
+.main-song-btn__shuffle {
+  margin-right: 5px;
+}
+
+.other-song {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.other-song-contents {
+  width: 215px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.other-song__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.other-song__information {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 117.81px;
+}
+
+.other-song__intro-singer,
+.music-starter__singer {
+  font-size: 10px;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: 5px;
+}
+
+.other-song__intro-song-title,
+.music-starter__song-title {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.other-song-contents i {
+  color: #999999;
+  margin-left: 40px;
+}
+
+.music-starter {
+  width: 250px;
+  height: 50px;
+  background-color: var(--font-color);
+  border-radius: 30px;
+}
+
+.music-starter__song {
+  color: #999999;
+}
+
+.music-starter__singer,
+.music-starter__song-title,
+.music-starter__icon i {
+  color: #dbdbdb;
+}
+
+.music-starter__song {
+  display: flex;
+  flex-direction: column;
+}
+
+.music-starter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 13px;
+}
+
+.music-starter__icon {
+  margin-left: 40px;
+}
+
+#pick {
+  box-shadow: 0px 0px 10px 5px #f5f5f5;
+}
+
+.infoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.imgBox {
+  margin-top: 50px;
+  display: block;
+  box-shadow: 0px 10px 10px 10px rgba(93, 81, 121, 0.2);
+  border-radius: 20px;
+}
+
+.imgone {
+  width: 195px;
+  height: 195px;
+  border-radius: 20px;
+}
+.titleName {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 600;
+}
+.titleInfo {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #999999;
+}
+
+.playTime {
+  margin-top: 30px;
+  width: 190px;
+  height: 20px;
+}
+
+.playTime span {
+  font-size: 10px;
+}
+
+.playTime__end {
+  margin-left: 146px;
+}
+
+.playBar-total {
+  width: 190px;
+  height: 4px;
+  background-color: #dbdbdb;
+  position: relative;
+}
+
+.playBar-now {
+  width: 10px;
+  height: 10px;
+  background-color: var(--font-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  left: 99px;
+}
+
+.PlayBar-played {
+  width: 100px;
+  height: 4px;
+  background-color: var(--font-color);
+  position: absolute;
+  bottom: 0px;
+}
+
+.playBtnBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.fa-share,
+.fa-random {
+  opacity: 0.3;
+}
+.fa-play-circle {
+  filter: drop-shadow(0px 5px 10px gray);
+}
